@@ -27,7 +27,11 @@ public class LogInTest {
     driver.findElement(By.id("ctl00_MainContent_password")).sendKeys("test" + Keys.ENTER);
     Assert.assertEquals(driver.getTitle(), "Web Orders");
 }
+@Test
+    public void CleanUp(){
+        driver.close();
 
+}
 }
 
 
